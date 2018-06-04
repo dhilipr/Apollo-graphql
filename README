@@ -1,0 +1,22 @@
+#GQL Server integration with Angular using Apollo Client
+
+#Setup gql Server
+   Install express graphql express-graphql
+   Create a query schema using buildschema
+   Create the rootresolver
+   Create a express app
+   Create a graphql endpoint and provide the middleware.
+   
+ 
+
+#Apollo Client integration
+    Install the following modules apollo-angular,apollo-angular-link-http ,apollo-cache-inmemory
+    In AppModule class create a connection to gql server using apollo.create and providing the server url.
+    In the component where you want the data, send the query to apollo.query method.
+    Write the query using 'gql' imported from graphql-tag.
+    Retrieve the data as an observable and bind to the DOM.
+
+#To run the application
+      Run node server.js  Now the gql server will be available on port 4000/graphql
+      Now in a new terminal serve the angular app inside client folder.
+
